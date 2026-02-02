@@ -1,20 +1,35 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# TranscribeAI Pro
 
-# Run and deploy your AI Studio app
+TranscribeAI Pro is a web app that converts audio into text using AI.  
+It is built with React and Vite and runs fully on the frontend.
 
-This contains everything you need to run your app locally.
+This project is mainly for learning, testing, and demos.
 
-View your app in AI Studio: https://ai.studio/apps/drive/15ojKJIOMzRaP32IlEYfoHeN8vpnDRZEV
+---
 
-## Run Locally
+## Features
 
-**Prerequisites:**  Node.js
+- Upload or record audio
+- Convert speech to text using AI
+- Clean and simple UI
+- Fast performance with Vite
+- Runs in the browser
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Tech Stack
+
+- React
+- Vite
+- TypeScript
+- Google Gemini API
+- GitHub Pages (for hosting)
+
+---
+
+## Getting Started (Local Setup)
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/Rheyan-Shah/transcribeaipro.git
+cd transcribeaipro
