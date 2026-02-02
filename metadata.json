@@ -1,0 +1,12 @@
+
+{
+  "name": "TranscribeAI Pro",
+  "short_name": "TranscribeAI",
+  "description": "Professional-grade AI transcription workspace with Groq Whisper v3, Gemini-powered analysis, and Notion integration.",
+  "theme_color": "#191919",
+  "background_color": "#191919",
+  "display": "standalone",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

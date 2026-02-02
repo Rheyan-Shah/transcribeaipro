@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TranscribeAI Pro | Intelligent Meeting Workspace</title>
+    <meta name="description" content="A professional-grade, local-first AI transcription workspace powered by Groq Whisper v3 and Gemini Intelligence.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        :root {
+            --bg-primary: #141414;
+            --bg-secondary: #191919;
+            --accent-blue: #007AFF;
+            --accent-red: #FF453A;
+            --border-subtle: rgba(255, 255, 255, 0.08);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-primary);
+            color: #FFFFFF;
+            overflow: hidden;
+            height: 100vh;
+            letter-spacing: -0.01em;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .notion-sidebar {
+            background-color: var(--bg-secondary);
+            border-right: 1px solid var(--border-subtle);
+        }
+
+        .document-canvas {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .floating-pill {
+            background: #252525;
+            border: 1px solid var(--border-subtle);
+            border-radius: 24px;
+            box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(20px);
+        }
+
+        .card-notion {
+            background: #191919;
+            border: 1px solid var(--border-subtle);
+            border-radius: 16px;
+            transition: all 0.2s ease;
+        }
+
+        .card-notion:hover {
+            background: #202020;
+            border-color: rgba(0, 122, 255, 0.3);
+        }
+
+        .custom-scrollbar::-webkit-scrollbar { width: 5px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 10px; }
+
+        .speaker-label {
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            color: #4b4b4b;
+            text-transform: uppercase;
+        }
+
+        .animate-in {
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .margin-timestamp {
+            color: #4b4b4b;
+            font-size: 11px;
+            font-family: monospace;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+
+        .segment-block:hover .margin-timestamp {
+            opacity: 1;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
