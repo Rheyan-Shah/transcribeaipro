@@ -22,7 +22,7 @@ This project is mainly for learning, testing, and demos.
 - React
 - Vite
 - TypeScript
-- Google Gemini API
+- Google Gemini API(not working rn)
 - GitHub Pages (for hosting)
 
 ---
